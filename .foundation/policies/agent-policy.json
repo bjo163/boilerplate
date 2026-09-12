@@ -1,0 +1,27 @@
+{
+  "namespace": "boilerplate",
+  "type": "project.agent_policy",
+  "id": "agent-policy",
+  "version": "1.0.0",
+  "schema": "../schemas/foundation.schema.json#/$defs/envelope",
+  "created_at": "2026-09-12T02:34:53Z",
+  "updated_at": "2026-09-12T02:34:53Z",
+  "source": {"type": "agent", "id": "chatgpt"},
+  "references": [],
+  "payload": {
+    "capabilities": {
+      "READ": {"default": "preferred"},
+      "CREATE": {"default": "allowed_when_scoped"},
+      "MODIFY": {"default": "scoped"},
+      "DELETE": {"default": "denied_without_explicit_authorization"},
+      "EXECUTE": {"default": "scoped"},
+      "NETWORK": {"default": "scoped"},
+      "SECRETS": {"default": "denied_unless_explicitly_required"},
+      "ADMINISTRATIVE": {"default": "denied_without_explicit_authorization"}
+    },
+    "destructive_operations": {
+      "default": "deny_or_stop_for_decision",
+      "includes": ["delete_files", "rewrite_history", "change_license", "modify_secrets", "change_deployment_infrastructure", "delete_tests", "remove_dependencies", "change_public_apis", "alter_persistent_data"]
+    }
+  }
+}

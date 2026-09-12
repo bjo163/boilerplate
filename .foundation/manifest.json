@@ -1,0 +1,38 @@
+{
+  "namespace": "boilerplate",
+  "type": "project.manifest",
+  "id": "foundation-manifest",
+  "version": "1.0.0",
+  "schema": "schemas/foundation.schema.json#/$defs/envelope",
+  "created_at": "2026-09-12T02:34:53Z",
+  "updated_at": "2026-09-12T02:34:53Z",
+  "source": {"type": "agent", "id": "chatgpt"},
+  "references": [],
+  "payload": {
+    "logical_roles": {
+      "documentation": "docs/",
+      "specification": ".foundation/schemas/",
+      "contracts": ".foundation/contracts/",
+      "tasks": ".foundation/tasks/",
+      "executions": ".foundation/executions/",
+      "evidence": ".foundation/evidence/",
+      "artifacts": ".foundation/artifacts/",
+      "reports": ".foundation/reports/",
+      "decisions": ".foundation/decisions/",
+      "automation": ".github/workflows/ (reserved; create only when project-specific CI exists)"
+    },
+    "identity_policy": {
+      "default": "13-digit monotonic numeric IDs for ordered development records",
+      "exceptions": "preserve stable project-defined IDs when documented"
+    },
+    "time_policy": "RFC 3339 / ISO 8601-compatible timestamps",
+    "versioning_policy": {
+      "schema": "independent",
+      "document": "independent",
+      "contract": "independent",
+      "task": "independent",
+      "artifact": "independent",
+      "implementation": "independent"
+    }
+  }
+}

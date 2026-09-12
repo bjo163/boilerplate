@@ -1,0 +1,30 @@
+{
+  "namespace": "boilerplate",
+  "type": "project.task",
+  "id": "0000000000001",
+  "version": "1.0.0",
+  "schema": "../schemas/foundation.schema.json#/$defs/task",
+  "created_at": "2026-09-12T02:34:53Z",
+  "updated_at": "2026-09-12T02:34:53Z",
+  "source": {"type": "agent", "id": "chatgpt"},
+  "references": [],
+  "payload": {
+    "title": "Establish Development Foundation",
+    "objective": "Establish a project-independent, machine-readable, auditable development foundation without implementing application functionality.",
+    "context": "The repository was discovered as an empty greenfield GitHub repository with no branch, commit, source, tooling, CI, schemas, contracts, tasks, reports, or architecture records.",
+    "scope": ["object envelope", "schema foundation", "contract foundation", "task foundation", "execution foundation", "report foundation", "reference model", "evidence model", "artifact model", "decision model", "agent capability policy", "project-specific adapter", "development documentation"],
+    "non_goals": ["application functionality", "framework selection", "language selection", "package-manager selection", "deployment design", "architecture rewrite"],
+    "inputs": ["Universal Software Development Foundation protocol supplied by the user", "observed repository metadata for bjo163/boilerplate"],
+    "dependencies": [],
+    "preconditions": ["Repository access is available", "Changes are limited to development foundation artifacts"],
+    "constraints": ["Prefer reuse over replacement", "No destructive operations", "Do not invent unavailable tooling"],
+    "permissions": {"READ": true, "CREATE": true, "MODIFY": "foundation artifacts only", "DELETE": false, "EXECUTE": "validation only", "NETWORK": "GitHub repository operations only", "SECRETS": false, "ADMINISTRATIVE": false},
+    "allowed_operations": ["inspect repository metadata and contents", "create governance/documentation files", "validate JSON and references", "update foundation state and reports"],
+    "prohibited_operations": ["implement application features", "delete repository content", "rewrite history", "change licensing", "modify secrets", "change deployment infrastructure"],
+    "execution_steps": ["DISCOVER", "AUDIT", "MODEL", "PLAN", "APPROVE", "EXECUTE", "VERIFY", "REPORT", "STATE UPDATE"],
+    "acceptance_criteria": ["Existing repository structure audited", "Existing controls identified", "Compatible controls reused when present", "Universal meta-structures established", "Project-specific tooling detected or declared unknown", "Machine-readable artifacts validate", "No unauthorized destructive operation performed", "Result documented", "Execution represented by verifiable report"],
+    "expected_outputs": [".foundation machine-readable controls", "human-readable development foundation documentation", "bootstrap execution report and state"],
+    "verification_requirements": ["JSON syntax validation", "JSON Schema validation", "reference/path consistency review", "GitHub repository read-back"],
+    "reporting_requirements": ["Machine-readable report", "Explicit requested/attempted/changed/verified/failed/blocked/unknown separation"]
+  }
+}
